@@ -1,36 +1,30 @@
-Lista de Exerc√≠cios 1 ‚Äì Ponteiros
-Aluno: Ricardo Martins Ven√¢ncio Varela - (Matricula: 20160108323)
+Lista de ExercÌcios 1 ñ Ponteiros
+Aluno: Ricardo Martins Ven‚ncio Varela - (Matricula: 20160108323)
 
 
-<<<<<<< HEAD
 QUEST√O 1 -  A partir do uso de ponteiros, podemos localizar o endereÁo de memÛria de uma determinada vari·vel, 
 dessa forma podemos acessar uma vari·vel em diferentes partes de um programa, sendo ˙teis em v·rias situaÁıes: 
 AlocaÁ„o din‚mica de memÛria, manipulaÁ„o de Arrays, entre outras utilidades.
-=======
-QUEST√ÉO 1 -  A partir do uso de ponteiros, podemos localizar o endere√ßo de mem√≥ria de uma determinada vari√°vel, 
-dessa forma podemos acessar uma vari√°vel em diferentes partes de um programa, sendo √∫teis em v√°rias situa√ß√µes:
-Aloca√ß√£o din√¢mica de mem√≥ria, manipula√ß√£o de Arrays, entre outras utilidades.
->>>>>>> 4b7741e2ff1c0cc13e0ee253f6014ec0004c6e62
 
-QUEST√ÉO 2 - 
+QUEST√O 2 - 
 
 int i=3,j=5; 
 int *p, *q;
-p = &i; // O valor de p √© o endere√ßo de i
-q = &j; // O valor de q √© o endere√ßo de j
+p = &i; // O valor de p È o endereÁo de i
+q = &j; // O valor de q È o endereÁo de j
 
-p == &i; // Verdadeiro, p recebe o endere√ßo de i. 
-Valor da express√£o = 6356740.
+p == &i; // Verdadeiro, p recebe o endereÁo de i. 
+Valor da express„o = 6356740.
 
-*p - *q; // *p igual ao conte√∫do em p e *q igual ao conte√∫do em q.
-Valor da express√£o = -2.
+*p - *q; // *p igual ao conte˙do em p e *q igual ao conte˙do em q.
+Valor da express„o = -2.
 
-**&p; // O ponteiro p para um ponteiro que apontar√° para um inteiro, o conte√∫do do endere√ßo de p √© o endere√ßo de i.
-Valor da express√£o = 3.
+**&p; // O ponteiro p para um ponteiro que apontar· para um inteiro, o conte˙do do endereÁo de p È o endereÁo de i.
+Valor da express„o = 3.
 
-3 - *p/(*q) + 7; // Valor da express√£o = 10.
+3 - *p/(*q) + 7; // Valor da express„o = 10.
 
-QUEST√ÉO 3 ‚Äì 
+QUEST√O 3 ñ 
 
 int i=5, *p;
 p = &i;
@@ -38,7 +32,7 @@ printf("%x %d %d %d %d", p,*p+2,**&p,3**p,**&p+4);
 }
 
 
-Supondo que i ocupa o endere√ßo 4094 na mem√≥ria, obtive os seguintes resultados:
+Supondo que i ocupa o endereÁo 4094 na memÛria, obtive os seguintes resultados:
 
 
 p = 4096;
@@ -47,18 +41,18 @@ p = 4096;
 3**p= 15;
 **p&p+4 = 9;
 
-QUEST√ÉO 4 - 
+QUEST√O 4 - 
 
-p = i; // Atribui√ß√£o legal, p recebe o valor de i.
-q = &j; // Atribui√ß√£o legal, q recebe o endere√ßo de j.
-p = &*&i; // Atribui√ß√£o legal. 
-i = (*&)j; //Atribui√ß√£o ilegal, devido ao uso do par√™nteses
-i = *&j; // Atribui√ß√£o legal. 
-i = *&*&j; Atribui√ß√£o legal, √© executado.
-q = *p; // Atribui√ß√£o ilegal.
-i = (*p)++ + *q; Atribui√ß√£o legal, sabendo que p e j recebem o valor de i e j.
+p = i; // AtribuiÁ„o legal, p recebe o valor de i.
+q = &j; // AtribuiÁ„o legal, q recebe o endereÁo de j.
+p = &*&i; // AtribuiÁ„o legal. 
+i = (*&)j; //AtribuiÁ„o ilegal, devido ao uso do parÍnteses
+i = *&j; // AtribuiÁ„o legal. 
+i = *&*&j; AtribuiÁ„o legal, È executado.
+q = *p; // AtribuiÁ„o ilegal.
+i = (*p)++ + *q; AtribuiÁ„o legal, sabendo que p e j recebem o valor de i e j.
 
-QUEST√ÉO 5 - 
+QUEST√O 5 - 
 
 int main() {
   int    valor;
@@ -74,7 +68,7 @@ int main() {
   int   *p5;
 
 
-// A quest√£o pede para determinar os valores para os seguintes problemas abaixo:
+// A quest„o pede para determinar os valores para os seguintes problemas abaixo:
 
 
 
@@ -164,7 +158,7 @@ return 0;
 }
 
 
-QUEST√ÉO 6 - Fazendo a compila√ß√£o do programa, foi encontrado:
+QUEST√O 6 - Fazendo a compilaÁ„o do programa, foi encontrado:
 
 contador/valor/valor/endereco/endereco
 i = 0vet[0] = 1.1*(f + 0) = 1.1&vet[0] = 60FEF4(f + 0) = 60FEF4
@@ -174,90 +168,64 @@ i = 3vet[3] = 4.4*(f + 3) = 4.4&vet[3] = 60FF00(f + 3) = 60FF00
 i = 4vet[4] = 5.5*(f + 4) = 5.5&vet[4] = 60FF04(f + 4) = 60FF04
 
 
-<<<<<<< HEAD
 QUEST√O 7 - Fazendo os testes no compilador, a seguinte express„o faz referÍncia ao valor do terceiro elemento do vetor:
-*(pulo + 2); Pois, ìpuloî est· apontando para o primeiro endereÁo, acrescentando o +2, 
-ir· para o terceiro elemento do vetor, j· fora dos parÍnteses o * vai mostrar o conte˙do da terceira posiÁ„o.
+ *(pulo + 2); Pois, ìpuloî est· apontando para o primeiro endereÁo, acrescentando o +2, ir· para o terceiro elemento
+ do vetor, j· fora dos parÍnteses o * vai mostrar o conte˙do da terceira posiÁ„o.
 
 
 QUEST√O 8 - 
 p = mat + 1; //Essa express„o È v·lida. Pois ela mostra o endereÁo de memÛria do vetor da posiÁ„o seguinte (+1).
 
 p = mat++; //Essa express„o n„o È v·lida. Pois o comando È de incremento, essa operaÁ„o n„o È permitida para o que queremos fazer. 
-=======
-QUEST√ÉO 7 - Fazendo os testes no compilador, a seguinte express√£o faz refer√™ncia ao valor do terceiro elemento do vetor: *(pulo + 2);
-Pois, ‚Äúpulo‚Äù est√° apontando para o primeiro endere√ßo, acrescentando o +2, ir√° para o terceiro elemento do vetor, j√° fora dos par√™nteses o * vai mostrar o conte√∫do da terceira posi√ß√£o.
 
+p = ++mat; //Essa express„o n„o È v·lida. Segue o mesmo raciocÌnio da anterior, n„o È possÌvel realocar.
 
-QUEST√ÉO 8 - 
-p = mat + 1; // Essa express√£o √© v√°lida. Pois ela mostra o endere√ßo de mem√≥ria do vetor da posi√ß√£o seguinte (+1).
-
-p = mat++; // Essa express√£o n√£o √© v√°lida. Pois o comando √© de incremento, essa opera√ß√£o n√£o √© permitida para o que queremos fazer. 
->>>>>>> 4b7741e2ff1c0cc13e0ee253f6014ec0004c6e62
-
-p = ++mat; // Essa express√£o n√£o √© v√°lida. Segue o mesmo racioc√≠nio da anterior, n√£o √© poss√≠vel realocar.
-
-x = (*mat)++; Essa express√£o √© v√°lida. Pois, pleo fator de * ser usado , ‚Äúx‚Äù recebe o conte√∫do da vari√°vel mais um (+1).
+x = (*mat)++; Essa express„o È v·lida. Pois, pleo fator de * ser usado , ìxî recebe o conte˙do da vari·vel mais um (+1).
  
 
-<<<<<<< HEAD
 QUEST√O 9 -
-No primeiro caso, como * foi usado na printf, ou seja, durante a implementaÁ„o do conte˙do, 
+No primeiro caso, como * foi usado na printf, ou seja, durante a implementaÁ„o do conte˙do,
 seu uso serviu para mostrar o valor das vari·veis de cada posiÁ„o do vetor.
-=======
-QUEST√ÉO 9 -
-	No primeiro caso, como * foi usado na printf, ou seja, durante a implementa√ß√£o do conte√∫do, seu uso serviu para mostrar o valor das vari√°veis de cada posi√ß√£o do vetor.
->>>>>>> 4b7741e2ff1c0cc13e0ee253f6014ec0004c6e62
 	
-No segundo caso, ao retirar *, foi exibido para o usu√°rio o endere√ßo das vari√°veis de cada posi√ß√£o do vetor.
+No segundo caso, ao retirar *, foi exibido para o usu·rio o endereÁo das vari·veis de cada posiÁ„o do vetor.
 
-QUEST√ÉO 10 - 
+QUEST√O 10 - 
 
 Char: 4092 +1; 4092 + 2; 4092 +3;
 Int: 4092 + 2; 4092 + 4; 4092 + 6;
 Float: 4092 + 4; 4092 + 8; 4092 + 12;
 Double: 4092 + 8; 4092 + 16; 4092 + 24;
 
-QUEST√ÉO 11-
+QUEST√O 11-
 
-<<<<<<< HEAD
-Na pr·tica, fizemos os testes utilizando: Char, int, float e double. 
-Ao compilar o programa, foi obtido os seguintes resultados:
-=======
-Na pr√°tica, fizemos os testes utilizando: Char, int, float e double. Ao compilar o programa, foi obtido os seguintes resultados:
->>>>>>> 4b7741e2ff1c0cc13e0ee253f6014ec0004c6e62
+Na pr·tica, fizemos os testes utilizando: Char, int, float e double. Ao compilar o programa, 
+foi obtido os seguintes resultados:
 
 Char: 1 Byte ? 6356747 ; 6356748 ; 6356749 ;
 Int: 4 Bytes ? 6356732; 6356736; 6356740;
 Float: 4 Bytes ? 6356740; 6356744; 6356748;
 Double: 8 Bytes ? 6356712; 6356720 ; 6356728;
 
-QUEST√ÉO 12 -
+QUEST√O 12 -
 
 float aloha[10], coisas[10][5], *pf, value = 2.2;
 int i=3;
-// Identificar quais dos seguintes comandos √© v√°lido ou inv√°lido:
+// Identificar quais dos seguintes comandos È v·lido ou inv·lido:
 
 
-aloha[2] = value; // V√°lido, pois recebe 2.2;
-scanf("%f", &aloha); // V√°lido, o conte√∫do vai para o endere√ßo de aloha[0].
-aloha = value"; Inv√°lidos, pois aloha √© um ponteiro.
-printf("%f", aloha); Inv√°lido, pois retorna o primeiro elemento do vetor que n√£o pode ser do tipo float
-coisas[4][4] = aloha[3]; V√°lido.
-coisas[5] = aloha; Inv√°lido, pois √© uma matriz e n√£o um vetor.
-pf = value; Inv√°lido, pois ‚Äúpf‚Äù √© um ponteiro de float.
-pf = aloha; V√°lido.
+aloha[2] = value; // V·lido, pois recebe 2.2;
+scanf("%f", &aloha); // V·lido, o conte˙do vai para o endereÁo de aloha[0].
+aloha = value"; Inv·lidos, pois aloha È um ponteiro.
+printf("%f", aloha); Inv·lido, pois retorna o primeiro elemento do vetor que n„o pode ser do tipo float
+coisas[4][4] = aloha[3]; V·lido.
+coisas[5] = aloha; Inv·lido, pois È uma matriz e n„o um vetor.
+pf = value; Inv·lido, pois ìpfî È um ponteiro de float.
+pf = aloha; V·lido.
 
-QUEST√ÉO 13 -
+QUEST√O 13 -
 
-<<<<<<< HEAD
-Com base nos conhecimentos adquiridos por meio da pesquisa ao tema, 
-ponteiros para funÁıes trabalha passando uma funÁ„o como par‚metro para outra funÁ„o, ou seja,
-o programador pode ter acesso ao determinado endereÁo de uma funÁ„o.
-
-=======
-Com base nos conhecimentos adquiridos por meio da pesquisa ao tema, ponteiros para fun√ß√µes trabalha passando uma fun√ß√£o como par√¢metro para outra fun√ß√£o, ou seja, o programador pode ter acesso ao determinado endere√ßo de uma fun√ß√£o.
->>>>>>> 4b7741e2ff1c0cc13e0ee253f6014ec0004c6e62
+Com base nos conhecimentos adquiridos por meio da pesquisa ao tema, ponteiros para funÁıes trabalha passando
+uma funÁ„o como par‚metro para outra funÁ„o, ou seja, o programador pode ter acesso ao determinado endereÁo de uma funÁ„o.
 Exemplificando melhor com um simples programa, temos:
 
 
@@ -295,7 +263,7 @@ Exemplificando melhor com um simples programa, temos:
 		       return(angulo);
 		   }
 
-QUEST√ÉO 14 -
+QUEST√O 14 -
 
 Utilizando os conhecimentos a respeito de Malloc para realizar a tarefa, temos:
 
@@ -332,20 +300,14 @@ int main(void){
 free(ptr);
 return 0;
 }
-QUEST√ÉO 15 -
+QUEST√O 15 -
 
-<<<<<<< HEAD
-Com base nos estudos a respeito da funÁ„o qsort(), 
-a sua utilizaÁ„o visa ordenar qualquer vetor em qualquer ordem escolhida.
+Com base nos estudos a respeito da funÁ„o qsort(), a sua utilizaÁ„o visa ordenar qualquer vetor em qualquer ordem 
+escolhida.
 
-->	qsort(vetor,quantidade,tamanho,funÁ„o);
-=======
-Com base nos estudos a respeito da fun√ß√£o qsort(), a sua utiliza√ß√£o visa ordenar qualquer vetor em qualquer ordem escolhida.
+	qsort(vetor,quantidade,tamanho,funÁ„o);
 
-?	qsort(vetor,quantidade,tamanho,fun√ß√£o);
->>>>>>> 4b7741e2ff1c0cc13e0ee253f6014ec0004c6e62
-
-Fazendo a implementa√ß√£o dessa fun√ß√£o no programa anterior, temos:
+Fazendo a implementaÁ„o dessa funÁ„o no programa anterior, temos:
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -354,13 +316,7 @@ int comparador (const void *a, const void *b){
     
 return (*(int*)a - *(int*)b);  
 
-<<<<<<< HEAD
-// Nesse passo ocorre a convers„o do valor dos par‚metros para inteiro e adentra o conte˙do da vari·vel.  
-Se for positivo, ìaî È maior que ìbî, ent„o realiza a troca, j· se for negativo, ìaî È menor que ìbî, 
-faz as trocas necess·rias para ordenar. 
-=======
-// Nesse passo ocorre a convers√£o do valor dos par√¢metros para inteiro e adentra o conte√∫do da vari√°vel.  Se for positivo, ‚Äúa‚Äù √© maior que ‚Äúb‚Äù, ent√£o realiza a troca, j√° se for negativo, ‚Äúa‚Äù √© menor que ‚Äúb‚Äù, faz as trocas necess√°rias para ordenar. 
->>>>>>> 4b7741e2ff1c0cc13e0ee253f6014ec0004c6e62
+// Nesse passo ocorre a convers„o do valor dos par‚metros para inteiro e adentra o conte˙do da vari·vel.  Se for positivo, ìaî È maior que ìbî, ent„o realiza a troca, j· se for negativo, ìaî È menor que ìbî, faz as trocas necess·rias para ordenar. 
 
 }
 
@@ -376,13 +332,8 @@ int main(void){
   
 qsort(ptr, n, sizeof(float), comparador); 
 
-<<<<<<< HEAD
-// ìptrî È o endereÁo do Array que ser· ordenado, j· ìnî È o tamanho do Array (quantidade), 
-ìsizeof(float)î È o tamanho, dada em bytes, de cada posiÁ„o do Array, 
-ìcomparadorî È o ponteiro para a funÁ„o de comparaÁ„o que recebe dois par‚metros.
-=======
-// ‚Äúptr‚Äù √© o endere√ßo do Array que ser√° ordenado, j√° ‚Äún‚Äù √© o tamanho do Array (quantidade), ‚Äúsizeof(float)‚Äù √© o tamanho, dada em bytes, de cada posi√ß√£o do Array, ‚Äúcomparador‚Äù √© o ponteiro para a fun√ß√£o de compara√ß√£o que recebe dois par√¢metros.
->>>>>>> 4b7741e2ff1c0cc13e0ee253f6014ec0004c6e62
+// ìptrî È o endereÁo do Array que ser· ordenado, j· ìnî È o tamanho do Array (quantidade), ìsizeof(float)î È o tamanho,
+dada em bytes, de cada posiÁ„o do Array, ìcomparadorî È o ponteiro para a funÁ„o de comparaÁ„o que recebe dois par‚metros.
 
 for(i=0;j<n;j++){
       printf("%f",ptr[i]);
@@ -392,7 +343,7 @@ for(i=0;j<n;j++){
   return 0;
 }
 
-QUEST√ÉO 16 -
+QUEST√O 16 -
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -424,14 +375,12 @@ int main (void) {
    return(0);
 }
 
-QUEST√ÉO 17 -
+QUEST√O 17 -
 
-<<<<<<< HEAD
-Alguns dos mecanismos que possibilitam medir tempos de execuÁ„o de rotinas computacionais, 
-pode ser pela biblioteca lib time.h, calculando quanto tempo demorou para o determinado programa
- executar com base no hor·rio que iniciou a compilaÁ„o atÈ o hor·rio do tÈrmino da compilaÁ„o. 
-Para isso podemos usar dois operadores que possibilitam executar a mediÁ„o, o time(NULL) e o clock().
-Fazendo os testes no programas anteriores, foi usado:
+Alguns dos mecanismos que possibilitam medir tempos de execuÁ„o de rotinas computacionais, pode ser pela biblioteca 
+lib time.h, calculando quanto tempo demorou para o determinado programa executar com base no hor·rio que iniciou a 
+compilaÁ„o atÈ o hor·rio do tÈrmino da compilaÁ„o. Para isso podemos usar dois operadores que possibilitam executar 
+a mediÁ„o, o time(NULL) e o clock(). Fazendo os testes no programas anteriores, foi usado:
 
 float tempo;
 time_t   time_ini, time_f;
@@ -439,16 +388,10 @@ time_ini = time(NULL);
 time_f = time(NULL);
 tempo = difftime(time_f, time_ini);
 
-Com isso foram obtidos resultados entre 0.7s e 2.0s no primeiro programa, 
-de acordo com o tÈrmino da execuÁ„o do programa e j· no segundo caso, algo em torno de 0.1s 
-
-=======
-Alguns dos mecanismos que possibilitam medir tempos de execu√ß√£o de rotinas computacionais, pode ser pela biblioteca lib time.h, calculando quanto tempo demorou para o determinado programa executar com base no hor√°rio que iniciou a compila√ß√£o at√© o hor√°rio do t√©rmino da compila√ß√£o.
->>>>>>> 4b7741e2ff1c0cc13e0ee253f6014ec0004c6e62
+Com isso foram obtidos resultados entre 0.7s e 2.0s no primeiro programa, de acordo com o tÈrmino da execuÁ„o do programa e j· no segundo caso, algo em torno de 0.1s 
 
 
-QUEST√ÉO 18 -
-
+QUEST√O 18 -
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -481,10 +424,9 @@ void soma(int *a, int *b, int *c, int tamanho){
    for(j=0; j<tamanho; j++){
         *(c+j)=*(a+j) + *(b+j);
    }
-
    for(i=0;i<tamanho;i++){
-       printf("Valor de vet[%d] e: %d ",i,*(c+i));
-     }
+       printf("Valor de vet[%d] e: %d ",i,*(c+i)
+   }
 }
 
 QUEST√O 20 - 
