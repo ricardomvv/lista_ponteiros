@@ -1,5 +1,7 @@
 # lista_ponteiros
-Lista de ponteiros referente à disciplina de Programação Avançada.
+<b>Lista de ponteiros referente à disciplina de Programação Avançada.</b>
 
 
-Componentes: Ricardo Martins Venâncio Varela: 20160108323
+Componentes: 
+
+Ricardo Martins Venâncio Varela - 20160108323
