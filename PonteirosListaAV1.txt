@@ -2,7 +2,9 @@ Lista de Exercícios 1 – Ponteiros
 Aluno: Ricardo Martins Venâncio Varela - (Matricula: 20160108323)
 
 
-QUESTÃO 1 -  A partir do uso de ponteiros, podemos localizar o endereço de memória de uma determinada variável, dessa forma podemos acessar uma variável em diferentes partes de um programa, sendo úteis em várias situações: Alocação dinâmica de memória, manipulação de Arrays, entre outras utilidades.
+QUESTÃO 1 -  A partir do uso de ponteiros, podemos localizar o endereço de memória de uma determinada variável, 
+dessa forma podemos acessar uma variável em diferentes partes de um programa, sendo úteis em várias situações: 
+Alocação dinâmica de memória, manipulação de Arrays, entre outras utilidades.
 
 QUESTÃO 2 - 
 
@@ -166,14 +168,15 @@ i = 3vet[3] = 4.4*(f + 3) = 4.4&vet[3] = 60FF00(f + 3) = 60FF00
 i = 4vet[4] = 5.5*(f + 4) = 5.5&vet[4] = 60FF04(f + 4) = 60FF04
 
 
-QUESTÃO 7 - Fazendo os testes no compilador, a seguinte expressão faz referência ao valor do terceiro elemento do vetor: *(pulo + 2);
-Pois, “pulo” está apontando para o primeiro endereço, acrescentando o +2, irá para o terceiro elemento do vetor, já fora dos parênteses o * vai mostrar o conteúdo da terceira posição.
+QUESTÃO 7 - Fazendo os testes no compilador, a seguinte expressão faz referência ao valor do terceiro elemento do vetor:
+*(pulo + 2); Pois, “pulo” está apontando para o primeiro endereço, acrescentando o +2, 
+irá para o terceiro elemento do vetor, já fora dos parênteses o * vai mostrar o conteúdo da terceira posição.
 
 
 QUESTÃO 8 - 
-p = mat + 1; // Essa expressão é válida. Pois ela mostra o endereço de memória do vetor da posição seguinte (+1).
+p = mat + 1; //Essa expressão é válida. Pois ela mostra o endereço de memória do vetor da posição seguinte (+1).
 
-p = mat++; // Essa expressão não é válida. Pois o comando é de incremento, essa operação não é permitida para o que queremos fazer. 
+p = mat++; //Essa expressão não é válida. Pois o comando é de incremento, essa operação não é permitida para o que queremos fazer. 
 
 p = ++mat; // Essa expressão não é válida. Segue o mesmo raciocínio da anterior, não é possível realocar.
 
@@ -181,7 +184,8 @@ x = (*mat)++; Essa expressão é válida. Pois, pleo fator de * ser usado , “x” rec
  
 
 QUESTÃO 9 -
-	No primeiro caso, como * foi usado na printf, ou seja, durante a implementação do conteúdo, seu uso serviu para mostrar o valor das variáveis de cada posição do vetor.
+No primeiro caso, como * foi usado na printf, ou seja, durante a implementação do conteúdo, 
+seu uso serviu para mostrar o valor das variáveis de cada posição do vetor.
 	
 No segundo caso, ao retirar *, foi exibido para o usuário o endereço das variáveis de cada posição do vetor.
 
@@ -194,7 +198,8 @@ Double: 4092 + 8; 4092 + 16; 4092 + 24;
 
 QUESTÃO 11-
 
-Na prática, fizemos os testes utilizando: Char, int, float e double. Ao compilar o programa, foi obtido os seguintes resultados:
+Na prática, fizemos os testes utilizando: Char, int, float e double. 
+Ao compilar o programa, foi obtido os seguintes resultados:
 
 Char: 1 Byte ? 6356747 ; 6356748 ; 6356749 ;
 Int: 4 Bytes ? 6356732; 6356736; 6356740;
@@ -219,7 +224,10 @@ pf = aloha; Válido.
 
 QUESTÃO 13 -
 
-Com base nos conhecimentos adquiridos por meio da pesquisa ao tema, ponteiros para funções trabalha passando uma função como parâmetro para outra função, ou seja, o programador pode ter acesso ao determinado endereço de uma função.
+Com base nos conhecimentos adquiridos por meio da pesquisa ao tema, 
+ponteiros para funções trabalha passando uma função como parâmetro para outra função, ou seja,
+o programador pode ter acesso ao determinado endereço de uma função.
+
 Exemplificando melhor com um simples programa, temos:
 
 
@@ -296,9 +304,10 @@ return 0;
 }
 QUESTÃO 15 -
 
-Com base nos estudos a respeito da função qsort(), a sua utilização visa ordenar qualquer vetor em qualquer ordem escolhida.
+Com base nos estudos a respeito da função qsort(), 
+a sua utilização visa ordenar qualquer vetor em qualquer ordem escolhida.
 
-?	qsort(vetor,quantidade,tamanho,função);
+->	qsort(vetor,quantidade,tamanho,função);
 
 Fazendo a implementação dessa função no programa anterior, temos:
 
@@ -309,7 +318,9 @@ int comparador (const void *a, const void *b){
     
 return (*(int*)a - *(int*)b);  
 
-// Nesse passo ocorre a conversão do valor dos parâmetros para inteiro e adentra o conteúdo da variável.  Se for positivo, “a” é maior que “b”, então realiza a troca, já se for negativo, “a” é menor que “b”, faz as trocas necessárias para ordenar. 
+// Nesse passo ocorre a conversão do valor dos parâmetros para inteiro e adentra o conteúdo da variável.  
+Se for positivo, “a” é maior que “b”, então realiza a troca, já se for negativo, “a” é menor que “b”, 
+faz as trocas necessárias para ordenar. 
 
 }
 
@@ -325,7 +336,9 @@ int main(void){
   
 qsort(ptr, n, sizeof(float), comparador); 
 
-// “ptr” é o endereço do Array que será ordenado, já “n” é o tamanho do Array (quantidade), “sizeof(float)” é o tamanho, dada em bytes, de cada posição do Array, “comparador” é o ponteiro para a função de comparação que recebe dois parâmetros.
+// “ptr” é o endereço do Array que será ordenado, já “n” é o tamanho do Array (quantidade), 
+“sizeof(float)” é o tamanho, dada em bytes, de cada posição do Array, 
+“comparador” é o ponteiro para a função de comparação que recebe dois parâmetros.
 
 for(i=0;j<n;j++){
       printf("%f",ptr[i]);
@@ -369,7 +382,21 @@ int main (void) {
 
 QUESTÃO 17 -
 
-Alguns dos mecanismos que possibilitam medir tempos de execução de rotinas computacionais, pode ser pela biblioteca lib time.h, calculando quanto tempo demorou para o determinado programa executar com base no horário que iniciou a compilação até o horário do término da compilação.
+Alguns dos mecanismos que possibilitam medir tempos de execução de rotinas computacionais, 
+pode ser pela biblioteca lib time.h, calculando quanto tempo demorou para o determinado programa
+ executar com base no horário que iniciou a compilação até o horário do término da compilação. 
+Para isso podemos usar dois operadores que possibilitam executar a medição, o time(NULL) e o clock().
+Fazendo os testes no programas anteriores, foi usado:
+
+float tempo;
+time_t   time_ini, time_f;
+time_ini = time(NULL);
+time_f = time(NULL);
+tempo = difftime(time_f, time_ini);
+
+Com isso foram obtidos resultados entre 0.7s e 2.0s no primeiro programa, 
+de acordo com o término da execução do programa e já no segundo caso, algo em torno de 0.1s 
+
 
 
 QUESTÃO 18 -
@@ -412,5 +439,31 @@ void soma(int *a, int *b, int *c, int tamanho){
      }
 }
 
+QUESTÃO 20 - 
+
+O libGC (Garbage Collector) que implementa um coletor de lixo C, tem como finalidade substituir o malloc. 
+Resumidamente, o que ela faz é a alocação de memória, sem desalocar a memória que não é mais útil.
+Por meio de algumas pesquisas sobre a biblioteca libGC e sua construção, um exemplo abaixo de demonstração:
+
+#include "gc.h" // Biblioteca GC (Garbage Collector)
+#include <assert.h>
+#include <stdio.h>
+
+int main ()
+{
+  int i;
+
+  GC_INIT
+  para (i = 0; i <10000000; ++ i)
+   {
+     int ** p = (int **) GC_MALLOC (tamanho de (int *));
+     int * q = (int *) GC_MALLOC_ATOMIC (tamanho de (int));
+     assert (* p == 0);
+     * p = (int *) GC_REALLOC (q, 2 * tamanho de (int));
+     if (i% 100000 == 0)
+       printf ("Tamanho do heap =% d \ n", GC_get_heap_size ());
+   }
+  return 0;
+}
 
 
